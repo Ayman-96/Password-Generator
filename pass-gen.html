@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pass-gen.css">
+    <!-- Add in <head> if using Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="pass-holder">
+            <div class="pass-box">Shield Your Account Well</div>
+            <div class="strength-check">
+                <div id="bar1">a</div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+                <div id="bar4"></div>
+            </div> <!--Remain-->
+            <div class="range">
+                <button id="decrease" class="change-range-btn">< </button>
+                <input type="range" class="input-range" min="8" max="32" value="8"><br>
+                <div class="range-number">8</div>
+                <button id="increase" class="change-range-btn"> ></button>
+            </div>
+        </div>
+        <div class="options">
+            <div class="left-checks">
+                <input type="checkbox" id="uppercase"> Include Uppercase Letters<br>
+                <input type="checkbox" id="numbers"> Include Numbers<br>
+            </div>
+            <div class="right-checks">
+                <input type="checkbox" id="symbols"> Include Symbols<br>
+                <input type="checkbox" id="duplicate"> Include Duplicate Characters<br>
+            </div>
+        </div>  
+        <div class="buttons">
+            <button class="generate-btn">Generate Password</button>
+            <button class="copy-btn">Copy to Clipboard</button>
+        </div>
+        <div class="copy-message"></div>
+    </div>
+    <script src="pass-ge.js"></script>
+</body>
+</html>
